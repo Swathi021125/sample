@@ -1,3 +1,61 @@
-body{
-    background-color: blue;
-}
+ header {
+                background: rgba(0, 0, 0, 0.9);
+                padding: 10px;
+                text-align: center;
+            }
+            header h1 {
+                font-size: 50px;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+                background: #376f61;
+                padding: 10px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 18px;
+                transition: 0.3s;
+            }
+            nav a:hover {
+                color: #10b995;
+            }
+            .container {
+                text-align: center;
+                padding: 100px 20px;
+            }
+            .container h2 {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+            .btn {
+                display: inline-block;
+                margin: 10px;
+                padding: 12px 30px;
+                font-size: 18px;
+                color: #fff;
+                background: #6f4e37;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            .btn:hover {
+                background: #00ffbf;
+                color: #000;
+            }
+            
+        h1{
+            font-size: 50px;
+        }
+
+        .name{
+            width: 400px;
+            height: 400px;
+        }
+        .flex{
+            flex-direction:column;
+            grid-row: 20px;
+        }
+        
+ 
