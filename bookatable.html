@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Table</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #f7d5d5;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0069d9;
+    }
+  </style>
+</head>
+
+<body>
+    <center><a href="index.html" class="btn">Back to Home</a></center>
+  <div class="container">
+    <h1>Book a Table</h1>
+
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="20" required />
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required />
+      </div>
+
+      <div class="form-group">
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="3"></textarea>
+      </div>
+
+      <button type="submit">Reserve Table</button>
+    </form>
+  </div>
+</body>
+</html>
