@@ -10,12 +10,16 @@
       background-color: #f5deb3;
       text-align: center;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
+
     h1 {
       margin-top: 40px;
       font-size: 32px;
       color: #333;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -23,24 +27,43 @@
       gap: 20px;
       padding: 20px;
     }
+
     .dish {
       width: 200px;
     }
+
     .dish img {
       width: 200px;
       height: 200px;
       object-fit: cover;
       border-radius: 8px;
     }
+
     .dish h3 {
       font-size: 14px;
       margin: 5px 0;
     }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #fff;
+      color: chocolate;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: chocolate;
+      color: white;
+    }
   </style>
 </head>
 <body>
-<a href="index.html" class="btn">Back to Home</a>
-  
+
+  <a href="index.html" class="btn">Back to Home</a>
 
   <h1>Chicken Gravy</h1>
   <div class="gallery">
@@ -83,6 +106,25 @@
     <div class="dish"><img src="image/photo2.jpg" alt=""><h3>Paneer Thava</h3></div>
     <div class="dish"><img src="image/photo3.jpg" alt=""><h3>Paneer Chilli</h3></div>
     <div class="dish"><img src="image/photo4.jpg" alt=""><h3>Paneer Tandoori</h3></div>
+  </div>
+
+  <h1>Dessert</h1>
+  <div class="gallery">
+    <div class="dish"><img src="image/src1.jpg" alt=""><h3>Ice Cream Cake</h3></div>
+    <div class="dish"><img src="image/src2.jpg" alt=""><h3>Chocolate Cake</h3></div>
+    <div class="dish"><img src="image/src3.jpg" alt=""><h3>Vanilla Cake</h3></div>
+    <div class="dish"><img src="image/src4.jpg" alt=""><h3>Chocolate Truffle Layer Cake</h3></div>
+    <div class="dish"><img src="image/src5.jpg" alt=""><h3>Chocolate Pudding</h3></div>
+    <div class="dish"><img src="image/src6.jpg" alt=""><h3>Oreo Pudding</h3></div>
+    <div class="dish"><img src="image/src8.jpg" alt=""><h3>Caramel Pudding</h3></div>
+    <div class="dish"><img src="image/src7.jpg" alt=""><h3>Brownie Pudding</h3></div>
+  </div>
+
+  <h1>Juice</h1>
+  <div class="gallery"> 
+    <div class="dish"><img src="image/pic1.jpg" alt=""><h3>Lemon Mojito</h3></div>
+    <div class="dish"><img src="image/pic2.webp" alt=""><h3>Pomegranate Mojito</h3></div>
+    <div class="dish"><img src="image/pic3.webp" alt=""><h3>Apple Juice</h3></div>
   </div>
 
 </body>
