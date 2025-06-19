@@ -4,28 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Order Online</title>
-  <link rel="stylesheet" href="./style.css">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fdf2e9;
       margin: 0;
       padding: 0;
+      color: #2c3e50;
     }
 
     .container {
       max-width: 500px;
       margin: 50px auto;
       padding: 30px;
-      background: #edd4d4;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      background: #fbeee0;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       text-align: center;
       margin-bottom: 30px;
+      font-size: 28px;
+      color: #2c3e50;
     }
 
     .order-form .form-group {
@@ -34,8 +36,9 @@
 
     .order-form label {
       display: block;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       font-weight: bold;
+      color: #2c3e50;
     }
 
     .order-form input,
@@ -43,31 +46,54 @@
     .order-form textarea {
       width: 100%;
       padding: 10px;
+      font-size: 16px;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 6px;
       box-sizing: border-box;
+    }
+
+    .order-form button {
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .order-form button:hover {
+      background-color: #d35400;
     }
 
     .btn {
       display: inline-block;
-      margin: 10px;
+      margin: 20px auto;
       padding: 12px 24px;
-      background-color: #fff;
-      color: chocolate;
+      background-color: #e67e22;
+      color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
 
     .btn:hover {
-      background-color: chocolate;
-      color: white;
+      background-color: #d35400;
+    }
+
+    center {
+      display: block;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-    <center><a href="index.html" class="btn">Back to Home</a></center>
+  <center><a href="index.html" class="btn">Back to Home</a></center>
 
   <div class="container">
     <h1>Online Food Order</h1>
@@ -87,9 +113,9 @@
         <label for="dish">Select Dish:</label>
         <select id="dish" name="dish" required>
           <option value="">-- Choose a Dish --</option>
-          <option value="pizza">Pizza</option>
-          <option value="burger">Burger</option>
-          <option value="pasta">Pasta</option>
+          <option value="Chicken Biriyani">Chicken Biriyani</option>
+          <option value="Mutton Biriyani">Mutton Biriyani</option>
+          <option value="Fish Biriyani">Fish Biriyani</option>
         </select>
       </div>
 
